@@ -16,7 +16,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT')
     })
 
-    it.only('preenche os campos obrigatórios e envia o formulário', function() {      
+    it('preenche os campos obrigatórios e envia o formulário', function() {      
         cy.get('input[id="firstName"]').type('Gabriel')
         cy.get('input[id="lastName"]').type('Antunes')
         cy.get('input[id="email"]').type('gabriel@gmail.com')
